@@ -1,0 +1,16 @@
+theme = "catppuccin_frappe"
+
+[editor]
+line-number = "relative"
+text-width = 80
+rulers = [81]
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
+
+[keys.insert]
+Meta-space = "no_op"

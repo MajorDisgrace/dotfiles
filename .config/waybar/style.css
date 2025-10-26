@@ -1,0 +1,176 @@
+@import "frappe.css";
+
+
+
+* {
+    font-family: 'Jet Brains Mono Nerd Font', monospace;
+}
+
+window#waybar {
+    background-color: @crust;
+    color: @text;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-radius: 0;
+}
+
+button {
+    border: none;
+    border-radius: 50;
+}
+
+button:hover {
+    background: inherit;
+    box-shadow: inherit;
+}
+
+
+
+.modules-left {
+    margin: 3px 10px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+
+
+.modules-center {
+    margin: 3px 10px;
+}
+
+
+
+.modules-right {
+    margin: 3px 10px;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+
+
+#workspaces {
+    margin: 0 4px;
+    background-color: @surface0;
+    border-radius: 50px;
+    padding: 0 10px;
+}
+
+#workspaces button {
+    background-color: @overlay0;
+    font-size: 0px;
+    min-height: 10px;
+    min-width: 10px;
+
+    margin: 10px 2px;
+    padding: 0;
+    border-radius: 50px;
+}
+
+#workspaces button:hover {
+    background-color: @overlay2;
+}
+
+#workspaces button.active {
+    background-color: @mauve;
+    min-height: 12px;
+    min-width: 30px;
+
+    margin: 8px 3px;
+    border-radius: 6px;
+}
+
+#workspaces button.focused {
+    background-color: @mauve;
+    min-height: 12px;
+    min-width: 30px;
+
+    margin: 8px 3px;
+    border-radius: 6px;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+
+    border-radius: 4px;
+}
+
+
+
+#window {
+    margin: 0 4px;
+    padding: 0 10px;
+}
+
+
+
+#clock {
+    background-color: @surface0;
+    border-radius: 50;
+    margin: 2px 2px 2px;
+}
+
+#clock,
+#battery,
+#tray,
+#language {
+    padding: 0 15px;
+    color: @text;
+    border-radius: 50;
+    margin: 2px 2px 2px;
+    padding-right: 21px;
+    margin-right: 0;
+}
+
+#battery {
+    color: @text;
+    background-color: @surface0;
+}
+
+#battery.charging, #battery.plugged {
+    color: @crust;
+    background-color: @green;
+}
+
+@keyframes blink {
+    to {
+        background-color: @surface0;
+        color: @text;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    background-color: @red;
+    color: @crust;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#tray {
+    background-color: @surface0;
+    padding: 0 15px;
+}
+
+#language {
+    background-color: @surface0;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
