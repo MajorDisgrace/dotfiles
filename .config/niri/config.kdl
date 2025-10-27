@@ -56,6 +56,12 @@ output "eDP-1" {
     position x=0 y=0
 }
 
+output "LG Electronics LG ULTRAGEAR 405NTYTJE122" {
+    mode "2560x1440@180"
+    scale 1
+    variable-refresh-rate
+}
+
 
 layout {
     gaps 12
