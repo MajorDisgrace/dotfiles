@@ -1,5 +1,6 @@
 fastfetch
 
+PS0="\n"
 PS1="\n\[\033[1;32m\]┏[\[\e]0;\u@\h: \w\a\]\u@\h:\w]\\n┗━┫\[\033[0m\]"
 
 alias sudo='sudo'
