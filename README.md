@@ -18,10 +18,10 @@ To install My dotfiles you'll need to install `git` and will probably want to in
 git clone https://github.com/MajorDisgrace/dotfiles.git .dotfiles
 
 ```
-Once that is done, delete the `.git` folder and all the dotfiles that you don't want. Setup your own git repo as well while you're at it.
 \
-All that remains to be done now is to symlink those dotfiles into your home directory.
-This can be done using stow
+Once that is done, delete the `.git` folder and all the dotfiles that you don't want. Setup your own git repo as well while you're at it.\
+\
+All that remains to be done now is to symlink those dotfiles into your home directory. This can be done using stow
 
 ```bash
 cd .dotfiles
@@ -35,7 +35,7 @@ ln -s ~/.dotfiles/.config/niri ~/.config/.
 ln -s ~/.dotfiles/.bashrc ~/.
 
 ```
-for example.
+for example.\
 \
 If the stow command gives you an Error, it's probably because one of the files or folders it was trying to symlink already exist on your system.
 To fix this issue you'll want to either delete the file/folder or even better just back it up like these examples:
@@ -43,4 +43,5 @@ To fix this issue you'll want to either delete the file/folder or even better ju
 ```bash
 mv .bashrc .bashrc.bak
 mv .config/niri/ .config/niri.bak
+
 ```
