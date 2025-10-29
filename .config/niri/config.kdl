@@ -69,7 +69,7 @@ output "LG Electronics LG ULTRAGEAR 405NTYTJE122" {
 
 
 layout {
-    gaps 12
+    gaps 10
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
