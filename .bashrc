@@ -1,5 +1,8 @@
 fastfetch
 
+PS1="\n\[\033[1;32m\]┏[\[\e]0;\u@\h: \w\a\]\u@\h:\w]\\n┗━┫\[\033[0m\]"
+
+alias sudo='sudo'
 alias ..='cd ..'
 alias cl='clear'
 alias clear='clear && fastfetch'
