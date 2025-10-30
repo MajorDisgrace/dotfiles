@@ -1,46 +1,24 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "display": {
-    "constants": [
-      "━━━━━━━━━━━━━━",
-    ],
-    "key": {
-      //"type": "icon",
-      "paddingLeft": 2,
+  "logo": {
+    "padding": {
+      "top": 1,
     },
   },
   "modules": [
-    //"title",
-    {
-      "type": "custom",
-      "format": "{#cyan}┏{$1} {#bold_blue}Hardware Information{#reset_cyan} {$1}┓{#}",
-    },
+    "title",
+    "separator",
+    "os",
     "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
     {
       "type": "display",
       "key": "Display",
       "format": "{width}x{height} @ {refresh-rate} Hz in {inch} ({name})",
     },
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    {
-      "type": "battery",
-      "key": "Battery",
-      "format": "{capacity} ({time-days} days remaining)"
-    },
-    "poweradapter",
-    {
-      "type": "custom",
-      "format": "{#cyan}┣{$1} {#bold_blue}Software Information{#reset_cyan} {$1}┫{#}",
-    },
-    "os",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
     "de",
     "wm",
     //"wmtheme",
@@ -50,15 +28,20 @@
     //"cursor",
     "terminal",
     "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
     "localip",
-    "locale",
     {
-      "type": "custom",
-      "format": "{#cyan}┗{$1}━━━━━━━━━━━━━━━━━━━━━━{$1}┛{#}",
+      "type": "battery",
+      "key": "Battery",
+      "format": "{capacity} ({time-days}d {time-hours}h {time-minutes}m remaining)",
     },
+    "poweradapter",
+    "locale",
     "break",
-    "colors",
+    "colors"
   ]
 }
-
-
