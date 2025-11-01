@@ -38,7 +38,7 @@
     {
       "type": "battery",
       "key": "Battery",
-      "format": "{capacity} ({time-days}d {time-hours}h {time-minutes}m remaining)",
+      //"format": "{capacity} ({time-days}d {time-hours}h {time-minutes}m remaining)",
     },
     "poweradapter",
     "locale",
