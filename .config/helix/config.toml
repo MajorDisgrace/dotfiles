@@ -4,6 +4,10 @@ theme = "catppuccin_frappe"
 line-number = "relative"
 text-width = 80
 rulers = [81]
+trim-trailing-whitespace = true
+
+[editor.file-picker]
+hidden = false
 
 [editor.indent-guides]
 render = true
