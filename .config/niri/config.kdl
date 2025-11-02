@@ -136,7 +136,7 @@ layout {
         // off
 
         width 3
-        
+
         active-color "#ca9ee6"
         inactive-color "#737994"
         urgent-color "#e78284"
@@ -472,9 +472,9 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    Alt+Shift+S { screenshot; }
-    Alt+S { screenshot-screen; }
-    Alt+Ctrl+S { screenshot-window; }
+    Mod+Shift+S { screenshot; }
+    Mod+S { screenshot-screen; }
+    Mod+Ctrl+S { screenshot-window; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
