@@ -1,0 +1,55 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd beep extendedglob nomatch notify
+bindkey -v
+# End of lines configured by zsh-newuser-install
+#
+#
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/felix/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+#
+#
+# Prompt customization
+
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+
+zstyle ':vcs_info:git:*' use-prompt-escapes yes
+zstyle ':vcs_info:git:*' formats '-{%F{11}%b%F{8}}'
+
+PROMPT='%B%F{8}
+┏[%F{14}%/%F{8}]-[%F{2}%T%F{8}]${vcs_info_msg_0_}
+┗[%F{2}%n%F{8}]$ %b%f'
+
+# End of Prompt customization
+#
+#
+# Rest of completion setup
+
+zstyle ':completion:*' menu select
+
+# End of completion setup
+#
+#
+# Things to execute
+
+fastfetch
+
+# End of things to execute
+#
+#
+# Aliases
+
+alias sudo='sudo'
+alias vi='nvim'
+alias lla='ll -a'
+
+# End of Aliases
