@@ -2,7 +2,8 @@ input {
     keyboard {
         xkb {
             layout "us,de"
-            options "grp:win_space_toggle,caps:swapescape,altwin:swap_lalt_lwin"
+            options "grp:win_space_toggle"
+            // options "grp:win_space_toggle,caps:swapescape,altwin:swap_lalt_lwin"
         }
 
         // Enable numlock on startup, omitting this setting disables it.
@@ -200,6 +201,11 @@ overview {
 }
 
 
+clipboard {
+    disable-primary
+}
+
+
 // Add lines like this to spawn processes at startup.
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
@@ -236,7 +242,7 @@ animations {
     // slowdown 3.0
 }
 
-window-rule {
+/-window-rule {
     match app-id="com.mitchellh.ghostty"
 
     opacity 0.9
@@ -247,6 +253,8 @@ window-rule {
     match app-id="firefox" title="Picture-in-Picture"
     match app-id="org.gnome.Characters"
     match app-id="org.pulseaudio.pavucontrol"
+    match app-id=".blueman-manager-wrapped"
+    match app-id="steam" title="Friends List"
 
     open-floating true
 }
@@ -263,7 +271,7 @@ window-rule {
     }
 }
 
-window-rule {
+/-window-rule {
     match app-id="firefox"
     match app-id="thunderbird"
 
@@ -430,10 +438,11 @@ binds {
     Mod+Ctrl+R { reset-window-height; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
+    Mod+Ctrl+F { toggle-windowed-fullscreen; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".
-    Mod+Ctrl+F { expand-column-to-available-width; }
+    // Mod+Ctrl+F { expand-column-to-available-width; }
 
     Mod+C { center-column; }
 
