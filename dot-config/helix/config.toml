@@ -2,12 +2,16 @@ theme = "catppuccin_frappe"
 
 [editor]
 line-number = "relative"
-text-width = 80
-rulers = [81]
+rulers = [81, 101]
+text-width = 90
 trim-trailing-whitespace = true
+end-of-line-diagnostics = "hint"
+
+[editor.lsp]
+display-inlay-hints = true
 
 [editor.file-picker]
-hidden = false
+hidden = true
 
 [editor.indent-guides]
 render = true
@@ -18,3 +22,6 @@ wrap-at-text-width = true
 
 [keys.insert]
 Meta-space = "no_op"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
