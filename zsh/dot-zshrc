@@ -57,6 +57,7 @@ export EDITOR='nvim'
 
 alias sudo='sudo'
 alias vi='nvim'
+alias edit='$EDITOR'
 alias ll='ls -l --group-directories-first'
 alias lla='ll -a'
 alias lsa='ls -a'
