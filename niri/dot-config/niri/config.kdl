@@ -308,7 +308,7 @@ binds {
     Mod+Shift+Return { spawn "nautilus"; }
     Mod+Ctrl+Return { spawn "firefox"; }
 
-    Mod+E { spawn "thunderbird"; }
+    Mod+E { spawn "flatpak" "run" "com.tomjwatson.Emote"; }
 
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
 
