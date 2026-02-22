@@ -59,7 +59,7 @@ export EDITOR='nvim'
 #
 # Aliases
 
-alias sudo='sudo'
+alias sudo='sudo '
 alias vi='nvim'
 alias edit='$EDITOR'
 alias ll='ls -l --group-directories-first'
