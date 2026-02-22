@@ -242,7 +242,7 @@ animations {
     // slowdown 3.0
 }
 
-/-window-rule {
+window-rule {
     match app-id="com.mitchellh.ghostty"
 
     opacity 0.9
