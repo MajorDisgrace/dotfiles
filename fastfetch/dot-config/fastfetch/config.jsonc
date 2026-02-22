@@ -1,42 +1,82 @@
 {
-  "logo": {
-    "padding": {
-      "left": 1,
-      "top": 1
-    }
-  },
-  "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
-    {
-      "format": "{width}x{height} @ {refresh-rate} Hz in {inch} ({name})",
-      "key": "Display",
-      "type": "display"
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "small",
+        "padding": {
+            "top": 1,
+            "left": 3
+        }
     },
-    "de",
-    "wm",
-    "font",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "localip",
-    {
-      "key": "Battery",
-      "type": "battery"
+    "display": {
+        "separator": "  ",
+        "color": "white"
     },
-    "poweradapter",
-    "locale",
-    "break",
-    "colors"
-  ]
+    "modules": [
+        {
+            "key": "┏━━━━━━━━━━━━━┓",
+            "type": "custom"
+        },
+        {
+            "key": "┃  {#31}  {#37}user    {#keys}┃",
+            "type": "title",
+            "format": "{#31}{user-name}"
+        },
+        {
+            "key": "┃  {#32}󰇅  {#37}hname   {#keys}┃",
+            "type": "title",
+            "format": "{#32}{host-name}"
+        },
+        {
+            "key": "┃  {#33}{icon}  {#37}distro  {#keys}┃",
+            "type": "os",
+            "format": "{#33}{name} {version}"
+        },
+        {
+            "key": "┃  {#34}󰇄  {#37}wm      {#keys}┃",
+            "type": "wm",
+            "format": "{#34}{pretty-name} {version}"
+        },
+        {
+            "key": "┃  {#35}  {#37}kernel  {#keys}┃",
+            "type": "kernel",
+            "format": "{#35}{release:7}"
+        },
+        {
+            "key": "┃  {#36}󰅐  {#37}uptime  {#keys}┃",
+            "type": "uptime",
+            "format": "{#36}{hours}h {minutes}m"
+        },
+        {
+            "key": "┃  {#31}  {#37}shell   {#keys}┃",
+            "type": "shell",
+            "format": "{#31}{pretty-name}"
+        },
+        {
+            "key": "┃  {#32}󰉉  {#37}disk    {#keys}┃",
+            "type": "disk",
+            "folders": "/",
+            "format": "{#32}{size-used~0,-4} | {size-total} {#37}({size-percentage}{#37})"
+        },
+        {
+            "key": "┃  {#33}  {#37}memory  {#keys}┃",
+            "type": "memory",
+            "format": "{#33}{used~0,-4} | {total} {#37}({percentage}{#37})"
+        },
+        {
+            "key": "┣━━━━━━━━━━━━━┫",
+            "type": "custom"
+        },
+        {
+            "key": "┃  {#37}  {#37}colors  {#keys}┃",
+            "type": "colors",
+            "block": {
+                "range": [ 0, 7 ]
+            },
+            "symbol": "block"
+        },
+        {
+            "key": "┗━━━━━━━━━━━━━┛",
+            "type": "custom"
+        }
+    ]
 }
