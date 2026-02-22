@@ -30,7 +30,7 @@ zstyle ':vcs_info:git:*' formats '%F{0}╺╸%F{3} %b%f'
 # ┗%F{0}[%F{2}%n%F{0}]%F{1}%# %b%f'
 
 PROMPT='%B
-%F{0}┏╸%F{2}%/${vcs_info_msg_0_}
+%F{0}┏╸%F{2}%~${vcs_info_msg_0_}
 %F{0}┗━━❯ %b%f'
 
 # End of Prompt customization
