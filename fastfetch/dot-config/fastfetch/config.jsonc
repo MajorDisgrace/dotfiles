@@ -36,7 +36,7 @@
         {
             "key": " ┃  {#34}󰇄  {#37}wm        {#keys}┃",
             "type": "wm",
-            "format": "{#34}{pretty-name} {version}"
+            "format": "{#34}{pretty-name} ({protocol-name})"
         },
         {
             "key": " ┃  {#35}  {#37}kernel    {#keys}┃",
