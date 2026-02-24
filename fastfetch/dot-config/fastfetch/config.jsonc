@@ -24,53 +24,53 @@
         {
             "key": " ┃  {#31}  {#37}user      {#keys}┃",
             "type": "title",
-            "format": "{#31}{user-name}"
+            "format": "{#1;31}{user-name}"
         },
         {
             "key": " ┃  {#32}󰇅  {#37}hname     {#keys}┃",
             "type": "title",
-            "format": "{#32}{host-name}"
+            "format": "{#1;32}{host-name}"
         },
         {
             "key": " ┃  {#33}{icon}  {#37}distro    {#keys}┃",
             "type": "os",
-            "format": "{#33}GNU/Linux {version}"
+            "format": "{#1;33}GNU/Linux {version}"
         },
         {
             "key": " ┃  {#34}󰇄  {#37}wm        {#keys}┃",
             "type": "wm",
-            "format": "{#34}{pretty-name} ({protocol-name})"
+            "format": "{#1;34}{pretty-name} ({protocol-name})"
         },
         {
             "key": " ┃  {#35}  {#37}kernel    {#keys}┃",
             "type": "kernel",
-            "format": "{#35}{release:7}"
+            "format": "{#1;35}{release:7}"
         },
         {
             "key": " ┃  {#36}󰅐  {#37}uptime    {#keys}┃",
             "type": "uptime",
-            "format": "{#36}{hours}h {minutes}m"
+            "format": "{#1;36}{hours}h {minutes}m"
         },
         {
             "key": " ┃  {#31}  {#37}shell     {#keys}┃",
             "type": "shell",
-            "format": "{#31}{pretty-name}"
+            "format": "{#1;31}{pretty-name}"
         },
         {
             "key": " ┃  {#32}  {#37}packages  {#keys}┃",
             "type": "packages",
-            "format": "{#32}{flatpak-all} (flatpak)"
+            "format": "{#1;32}{flatpak-all} (flatpak)"
         },
         {
             "key": " ┃  {#33}󰉉  {#37}disk      {#keys}┃",
             "type": "disk",
             "folders": "/",
-            "format": "{#33}{size-used~0,-4} | {size-total} {#37}({size-percentage}{#37})"
+            "format": "{#1;33}{size-used~0,-4} | {size-total} {#1;37}({size-percentage}{#1;37})"
         },
         {
             "key": " ┃  {#34}  {#37}memory    {#keys}┃",
             "type": "memory",
-            "format": "{#34}{used~0,-4} | {total} {#37}({percentage}{#37})"
+            "format": "{#1;34}{used~0,-4} | {total} {#1;37}({percentage}{#1;37})"
         },
         {
             "key": " ┣━━━━━━━━━━━━━━━┫",
