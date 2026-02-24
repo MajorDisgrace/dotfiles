@@ -1,4 +1,4 @@
-@import "frappe.css";
+@import "themes/macchiato.css";
 
 
 
@@ -12,6 +12,7 @@ window#waybar {
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 0;
+    opacity: 0.9;
 }
 
 button {
