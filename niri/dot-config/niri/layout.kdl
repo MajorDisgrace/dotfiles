@@ -31,7 +31,7 @@ layout {
     // default-column-width {}
 
     focus-ring {
-        on
+        off
 
         width 2
 
@@ -53,7 +53,7 @@ layout {
     tab-indicator {
         on
 
-        gap 2
+        gap 0
 
         hide-when-single-tab
         place-within-column
