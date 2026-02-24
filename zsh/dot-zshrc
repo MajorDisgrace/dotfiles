@@ -59,6 +59,7 @@ export EDITOR='nvim'
 #
 # Aliases
 
+alias ff='fastfetch'
 alias sudo='sudo '
 alias vi='nvim'
 alias edit='$EDITOR'
@@ -69,5 +70,8 @@ alias nrs='nixos-rebuild switch'
 alias nrs-fi='nixos-rebuild switch --flake --impure'
 alias nfu='nix flake update'
 alias ncg='nix-collect-garbage --delete-older-than 7d'
+alias ...='../..'
+alias ....='../../..'
+alias .....='../../../..'
 
 # End of Aliases
