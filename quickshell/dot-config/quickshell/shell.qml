@@ -1,19 +1,7 @@
-import Quickshell
-import Quickshell.Wayland
-import QtQuick
-import QtQuick.Layouts
+import Quickshell // for PanelWindow
+import Quickshell.Io
+import QtQuick // for Text
 
-PanelWindow {
-	anchors.top: true
-	anchors.left: true
-	anchors.right: true
-	implicitHeight: 30
-	color: '#1a1b26'
-
-	Text {
-		anchors.centerIn: parent
-		text: 'My First Bar'
-		color: '#a9b1d6'
-		font.pixelSize: 14
-	}
+Scope {
+	Bar {}
 }
