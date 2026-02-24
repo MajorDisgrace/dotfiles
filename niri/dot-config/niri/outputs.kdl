@@ -1,0 +1,24 @@
+output "eDP-1" {
+    // Uncomment this line to disable this output.
+    // off
+
+    // Resolution and, optionally, refresh rate of the output.
+    // The format is "<width>x<height>" or "<width>x<height>@<refresh rate>".
+    mode "2256x1504@60"
+
+    scale 1
+
+    // Transform allows to rotate the output counter-clockwise, valid values are:
+    // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
+    transform "normal"
+
+    // For example, a 3840×2160 output with scale 2.0 will have a logical size of 1920×1080,
+    // so to put another output directly adjacent to it on the right, set its x to 1920.
+    position x=0 y=0
+}
+
+output "LG Electronics LG ULTRAGEAR 405NTYTJE122" {
+    mode "2560x1440@180"
+    scale 1
+    variable-refresh-rate
+}

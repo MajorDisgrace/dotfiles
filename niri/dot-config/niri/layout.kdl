@@ -1,0 +1,88 @@
+layout {
+    gaps 6
+
+    // When to center a column when changing focus, options are:
+    // - "never", default behavior, focusing an off-screen column will keep at the left
+    //   or right edge of the screen.
+    // - "always", the focused column will always be centered.
+    // - "on-overflow", focusing a column will center it if it doesn't fit
+    //   together with the previously focused column.
+    center-focused-column "never"
+    always-center-single-column
+
+    empty-workspace-above-first
+
+    preset-column-widths {
+        // Proportion sets the width as a fraction of the output width, taking gaps into account.
+        // For example, you can perfectly fit four windows sized "proportion 0.25" on an output.
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+
+        // Fixed sets the width in logical pixels exactly.
+        // fixed 1920
+    }
+
+    // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
+    // preset-window-heights { }
+
+    default-column-width { proportion 0.5; }
+    // If you leave the brackets empty, the windows themselves will decide their initial width.
+    // default-column-width {}
+
+    focus-ring {
+        on
+
+        width 2
+
+        active-color "#200050"
+        inactive-color "#200050"
+        urgent-color "#200050"
+    }
+
+    border {
+        on
+
+        width 3
+
+        active-color "#cba6f7"
+        inactive-color "#737994"
+        urgent-color "#e78284"
+    }
+
+    tab-indicator {
+        on
+
+        gap 2
+
+        hide-when-single-tab
+        place-within-column
+
+        active-color "blue"
+        inactive-color "black"
+        urgent-color "red"
+    }
+
+    shadow {
+        off
+
+        // Softness controls the shadow blur radius.
+        softness 30
+
+        // Spread expands the shadow.
+        spread 5
+
+        // Offset moves the shadow relative to the window.
+        offset x=0 y=5
+
+        // You can also change the shadow color and opacity.
+        color "#0007"
+    }
+
+    struts {
+        left 0
+        right 0
+        top 0
+        bottom 0
+    }
+}
