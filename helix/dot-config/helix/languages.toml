@@ -1,13 +1,13 @@
 [[rust]]
-scope = "source.rs"
-file-types = [ "rs" ]
-indent = { tab-width = 4, unit = "    " }
+# scope = "source.rs"
+# file-types = [ "rs" ]
+indent = { tab-width = 4, unit = " " }
 formatter = { command = "rustfmt" }
 
 [[odin]]
-scope = "source.odin"
-file-types = [ "odin" ]
-indent = { tab-width = 2, unit = "  " }
+# scope = "source.odin"
+# file-types = [ "odin" ]
+indent = { tab-width = 4, unit = " " }
 
 [[c]]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = " " }

@@ -1,17 +1,28 @@
 theme = "catppuccin_mocha"
 
 [editor]
+scrolloff = 10
+default-yank-register = '+'
 line-number = "relative"
+cursorline = true
+cursorcolumn = false
 rulers = [81, 101]
-text-width = 90
+bufferline = "multiple"
+color-modes = true
+text-width = 100
 trim-trailing-whitespace = true
 end-of-line-diagnostics = "hint"
+editor-config = true
+
+[editor.statusline]
+center = ["version-control"]
 
 [editor.lsp]
 display-inlay-hints = true
+inlay-hints-length-limit = 20
 
 [editor.file-picker]
-hidden = true
+hidden = false
 
 [editor.indent-guides]
 render = true
@@ -20,8 +31,15 @@ render = true
 enable = true
 wrap-at-text-width = true
 
-[keys.insert]
-Meta-space = "no_op"
+[editor.smart-tab]
+supersede-menu = true
 
 [editor.inline-diagnostics]
-cursor-line = "warning"
+cursor-line = "info"
+other-lines = "error"
+
+[keys.normal]
+"ret" = ["open_below", "normal_mode"]
+
+[keys.insert]
+Meta-space = "no_op"
