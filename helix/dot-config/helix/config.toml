@@ -2,7 +2,7 @@ theme = "catppuccin_mocha"
 
 [editor]
 scrolloff = 10
-default-yank-register = '+'
+default-yank-register = '"'
 line-number = "relative"
 cursorline = true
 cursorcolumn = false
@@ -25,7 +25,7 @@ inlay-hints-length-limit = 20
 hidden = false
 
 [editor.indent-guides]
-render = true
+render = false
 
 [editor.soft-wrap]
 enable = true
@@ -40,6 +40,7 @@ other-lines = "error"
 
 [keys.normal]
 "ret" = ["open_below", "normal_mode"]
+"S-ret" = ["open_above", "normal_mode"]
 
 [keys.insert]
 Meta-space = "no_op"
