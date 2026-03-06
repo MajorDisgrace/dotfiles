@@ -18,4 +18,4 @@ include "animations.kdl"
 
 include "gestures.kdl"
 
-// TODO: recent-windows
+include "recent-windows.kdl"
