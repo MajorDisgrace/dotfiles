@@ -1,6 +1,6 @@
 [[rust]]
-# scope = "source.rs"
-# file-types = [ "rs" ]
+scope = "source.rs"
+file-types = [ "rs" ]
 indent = { tab-width = 4, unit = " " }
 formatter = { command = "rustfmt" }
 
@@ -11,3 +11,9 @@ indent = { tab-width = 4, unit = " " }
 
 [[c]]
 indent = { tab-width = 4, unit = " " }
+
+[[nix]]
+indent = { tab-width = 4, unit = " " }
+
+[[kdl]]
+indent = { tab-width = 4, unit = " "}
