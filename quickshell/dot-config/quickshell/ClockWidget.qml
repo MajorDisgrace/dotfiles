@@ -1,6 +1,6 @@
 import QtQuick
 
 Text {
-    font.family: Style.fontFamily
+    font.family: "jetbrains-mono"
     text: "tist"
 }
