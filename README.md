@@ -2,7 +2,7 @@
 
 ## About
 
-These are my dotfiles. They're probably gonna work best in tandem with [My NixOS-configuration](https://github.com/MajorDisgrace/nixos-configuration).
+These are my dotfiles. They're probably gonna work best in tandem with [My NixOS-configuration](https://github.com/MajorDisgrace/system).
 
 ## What's inside
 
