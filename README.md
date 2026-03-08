@@ -2,7 +2,7 @@
 
 ## About
 
-These are my dotfiles. They're probably gonna work best in tandem with [My NixOS-configuration](https://github.com/MajorDisgrace/system).
+These are my dotfiles. They're probably gonna work best in tandem with [My NixOS-configuration](https://codeberg.org/MajorDisgrace/system).
 
 ## What's inside
 
@@ -15,7 +15,7 @@ Just check it out in the file browser.
 To install My dotfiles you'll need to install `git` and will probably want to install `stow`.
 
 ```bash
-git clone https://github.com/MajorDisgrace/dotfiles.git .dotfiles
+git clone https://codeberg.org/MajorDisgrace/dotfiles.git .dotfiles
 
 ```
 \
