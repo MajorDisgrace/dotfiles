@@ -21,18 +21,18 @@ git clone https://github.com/MajorDisgrace/dotfiles.git .dotfiles
 \
 Once that is done, delete the `.git` folder and all the dotfiles that you don't want. Setup your own git repo as well while you're at it.\
 \
-All that remains to be done now is to symlink those dotfiles into your home directory. This can be done using stow
+All that remains to be done now is to symlink those dotfiles into your home directory. This can be done using stow (just replace the list of dotfiles with whatever you wish to install)
 
 ```bash
 cd .dotfiles
-stow .
+stow niri ghostty zsh
 
 ```
 or by doing it manually by doing
 
 ```bash
-ln -s ~/.dotfiles/.config/niri ~/.config/.
-ln -s ~/.dotfiles/.bashrc ~/.
+ln -s ~/.dotfiles/niri/dot-config/niri ~/.config/.
+ln -s ~/.dotfiles/zsh/dot-zshrc ~/.zshrc
 
 ```
 for example.\
@@ -41,7 +41,7 @@ If the stow command gives you an Error, it's probably because one of the files o
 To fix this issue you'll want to either delete the file/folder or even better just back it up like these examples:
 
 ```bash
-mv .bashrc .bashrc.bak
+mv .zshrc .zshrc.bak
 mv .config/niri/ .config/niri.bak
 
 ```
