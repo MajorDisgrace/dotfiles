@@ -2,7 +2,7 @@
 
 ## About
 
-These are my dotfiles. They're probably gonna work best in tandem with [My NixOS-configuration](https://codeberg.org/MajorDisgrace/system).
+These are my dotfiles and still a work in progress. They're probably gonna work best in tandem with [My NixOS-configuration](https://codeberg.org/MajorDisgrace/system).
 
 ## What's inside
 
